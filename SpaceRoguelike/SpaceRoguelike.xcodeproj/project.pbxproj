@@ -103,6 +103,8 @@
 		C914381613F5E1EE00019EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381513F5E1EE00019EBF /* AppDelegate.m */; };
 		C914381913F5E1EE00019EBF /* SRLayerMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381813F5E1EE00019EBF /* SRLayerMainMenu.m */; };
 		C93BB7EF13F98020005A403A /* SRLayerTileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C93BB7EE13F98020005A403A /* SRLayerTileTest.m */; };
+		C93BB7FA13F9853C005A403A /* DefaultTileset.tmx in Resources */ = {isa = PBXBuildFile; fileRef = C93BB7F813F9853C005A403A /* DefaultTileset.tmx */; };
+		C93BB7FB13F9853C005A403A /* tilesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = C93BB7F913F9853C005A403A /* tilesheet.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -306,6 +308,8 @@
 		C914382013F5F48900019EBF /* SpaceRoguelike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceRoguelike.h; sourceTree = "<group>"; };
 		C93BB7ED13F98020005A403A /* SRLayerTileTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLayerTileTest.h; sourceTree = "<group>"; };
 		C93BB7EE13F98020005A403A /* SRLayerTileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLayerTileTest.m; sourceTree = "<group>"; };
+		C93BB7F813F9853C005A403A /* DefaultTileset.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = DefaultTileset.tmx; path = Resources/Tiles/DefaultTileset.tmx; sourceTree = "<group>"; };
+		C93BB7F913F9853C005A403A /* tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tilesheet.png; path = Resources/Tiles/tilesheet.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +377,7 @@
 		C91436F613F5E1EC00019EBF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C93BB7F713F98525005A403A /* Tiles */,
 				C91436FE13F5E1EC00019EBF /* fps_images.png */,
 				C914370013F5E1EC00019EBF /* icon.icns */,
 				C914370213F5E1EC00019EBF /* Info.plist */,
@@ -659,6 +664,15 @@
 			name = Layers;
 			sourceTree = "<group>";
 		};
+		C93BB7F713F98525005A403A /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				C93BB7F813F9853C005A403A /* DefaultTileset.tmx */,
+				C93BB7F913F9853C005A403A /* tilesheet.png */,
+			);
+			name = Tiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -714,6 +728,8 @@
 				C91436FD13F5E1EC00019EBF /* MainMenu.xib in Resources */,
 				C91436FF13F5E1EC00019EBF /* fps_images.png in Resources */,
 				C914370113F5E1EC00019EBF /* icon.icns in Resources */,
+				C93BB7FA13F9853C005A403A /* DefaultTileset.tmx in Resources */,
+				C93BB7FB13F9853C005A403A /* tilesheet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

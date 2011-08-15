@@ -26,6 +26,10 @@
         CCLabelTTF* label = [CCLabelTTF labelWithString:@"Tile test" fontName:@"Helvetica" fontSize:12];
         label.position = ccp(size.width / 2, size.height / 2);
         [self addChild:label];
+        
+        CCTMXTiledMap* tiledMap = [CCTMXTiledMap tiledMapWithTMXFile:@"DefaultTileset.tmx"];
+        [self addChild:tiledMap];
+        
     }
     return self;
 }
