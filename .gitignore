@@ -1,0 +1,15 @@
+.DS_Store
+*.love
+loveapp/*.love
+
+# xcode noise
+build/*
+*.pbxuser
+*.mode1v3
+xcuserdata
+
+# old skool
+.svn
+
+# osx noise
+profile
