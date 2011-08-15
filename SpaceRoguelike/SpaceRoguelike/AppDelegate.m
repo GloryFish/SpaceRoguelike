@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HelloWorldLayer.h"
+#import "SpaceRoguelike.h"
 
 @implementation SpaceRoguelikeAppDelegate
 @synthesize window=window_, glView=glView_;
@@ -29,7 +29,7 @@
 	[window_ setAcceptsMouseMovedEvents:NO];
 	
 	
-	[director runWithScene:[HelloWorldLayer scene]];
+	[director runWithScene:[SRLayerMainMenu scene]];
 }
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed: (NSApplication *) theApplication

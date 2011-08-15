@@ -101,7 +101,7 @@
 		C914380F13F5E1EE00019EBF /* CDXPropertyModifierAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C914380E13F5E1EE00019EBF /* CDXPropertyModifierAction.m */; };
 		C914381313F5E1EE00019EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381213F5E1EE00019EBF /* main.m */; };
 		C914381613F5E1EE00019EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381513F5E1EE00019EBF /* AppDelegate.m */; };
-		C914381913F5E1EE00019EBF /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381813F5E1EE00019EBF /* HelloWorldLayer.m */; };
+		C914381913F5E1EE00019EBF /* SRLayerMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381813F5E1EE00019EBF /* SRLayerMainMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -300,8 +300,8 @@
 		C914381213F5E1EE00019EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C914381413F5E1EE00019EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C914381513F5E1EE00019EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C914381713F5E1EE00019EBF /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		C914381813F5E1EE00019EBF /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		C914381713F5E1EE00019EBF /* SRLayerMainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRLayerMainMenu.h; sourceTree = "<group>"; };
+		C914381813F5E1EE00019EBF /* SRLayerMainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRLayerMainMenu.m; sourceTree = "<group>"; };
 		C914382013F5F48900019EBF /* SpaceRoguelike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceRoguelike.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -355,11 +355,10 @@
 		C91436F513F5E1EC00019EBF /* SpaceRoguelike */ = {
 			isa = PBXGroup;
 			children = (
+				C93BB7EC13F97C61005A403A /* Layers */,
 				C914381F13F5F45E00019EBF /* Utility */,
 				C914381413F5E1EE00019EBF /* AppDelegate.h */,
 				C914381513F5E1EE00019EBF /* AppDelegate.m */,
-				C914381713F5E1EE00019EBF /* HelloWorldLayer.h */,
-				C914381813F5E1EE00019EBF /* HelloWorldLayer.m */,
 				C91436F613F5E1EC00019EBF /* Resources */,
 				C914370313F5E1EC00019EBF /* libs */,
 				C914381013F5E1EE00019EBF /* Supporting Files */,
@@ -646,6 +645,15 @@
 			name = Utility;
 			sourceTree = "<group>";
 		};
+		C93BB7EC13F97C61005A403A /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				C914381713F5E1EE00019EBF /* SRLayerMainMenu.h */,
+				C914381813F5E1EE00019EBF /* SRLayerMainMenu.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -795,7 +803,7 @@
 				C914380F13F5E1EE00019EBF /* CDXPropertyModifierAction.m in Sources */,
 				C914381313F5E1EE00019EBF /* main.m in Sources */,
 				C914381613F5E1EE00019EBF /* AppDelegate.m in Sources */,
-				C914381913F5E1EE00019EBF /* HelloWorldLayer.m in Sources */,
+				C914381913F5E1EE00019EBF /* SRLayerMainMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,6 +917,7 @@
 				C914381E13F5E1EE00019EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
