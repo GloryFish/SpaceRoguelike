@@ -102,6 +102,7 @@
 		C914381313F5E1EE00019EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381213F5E1EE00019EBF /* main.m */; };
 		C914381613F5E1EE00019EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381513F5E1EE00019EBF /* AppDelegate.m */; };
 		C914381913F5E1EE00019EBF /* SRLayerMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C914381813F5E1EE00019EBF /* SRLayerMainMenu.m */; };
+		C93BB7EF13F98020005A403A /* SRLayerTileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C93BB7EE13F98020005A403A /* SRLayerTileTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -303,6 +304,8 @@
 		C914381713F5E1EE00019EBF /* SRLayerMainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRLayerMainMenu.h; sourceTree = "<group>"; };
 		C914381813F5E1EE00019EBF /* SRLayerMainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRLayerMainMenu.m; sourceTree = "<group>"; };
 		C914382013F5F48900019EBF /* SpaceRoguelike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceRoguelike.h; sourceTree = "<group>"; };
+		C93BB7ED13F98020005A403A /* SRLayerTileTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLayerTileTest.h; sourceTree = "<group>"; };
+		C93BB7EE13F98020005A403A /* SRLayerTileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLayerTileTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,6 +653,8 @@
 			children = (
 				C914381713F5E1EE00019EBF /* SRLayerMainMenu.h */,
 				C914381813F5E1EE00019EBF /* SRLayerMainMenu.m */,
+				C93BB7ED13F98020005A403A /* SRLayerTileTest.h */,
+				C93BB7EE13F98020005A403A /* SRLayerTileTest.m */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -804,6 +809,7 @@
 				C914381313F5E1EE00019EBF /* main.m in Sources */,
 				C914381613F5E1EE00019EBF /* AppDelegate.m in Sources */,
 				C914381913F5E1EE00019EBF /* SRLayerMainMenu.m in Sources */,
+				C93BB7EF13F98020005A403A /* SRLayerTileTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

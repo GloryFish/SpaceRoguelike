@@ -6,6 +6,7 @@
 //  Copyright GloryFish.org 2011. All rights reserved.
 //
 
+#import "SpaceRoguelike.h"
 #import "SRLayerMainMenu.h"
 
 @implementation SRLayerMainMenu
@@ -33,14 +34,15 @@
 		[self addChild: label];
         
         
-        CCMenuItemFont* testItem = [CCMenuItemFont itemFromString:@"Test Item" block:^(id sender){
-            NSLog(@"Testing...");
+        CCMenuItemFont* itemTileTest = [CCMenuItemFont itemFromString:@"Tile Test" block:^(id sender){
+            CCScene* scene = [SRLayerTileTest scene];
+            [[CCDirector sharedDirector] replaceScene:[CCTransitionSlideInL transitionWithDuration:0.5 scene:scene]];
         }];
-        testItem.fontName = @"Helvetica";
-        testItem.fontSize = 18;
+        itemTileTest.fontName = @"Helvetica";
+        itemTileTest.fontSize = 18;
         
         // Menu
-        CCMenu* menu = [CCMenu menuWithItems:testItem, nil];
+        CCMenu* menu = [CCMenu menuWithItems:itemTileTest, nil];
         
         [self addChild:menu];
 	}
