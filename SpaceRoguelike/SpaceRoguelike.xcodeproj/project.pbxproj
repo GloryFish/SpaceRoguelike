@@ -105,6 +105,8 @@
 		C93BB7EF13F98020005A403A /* SRLayerTileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C93BB7EE13F98020005A403A /* SRLayerTileTest.m */; };
 		C93BB7FA13F9853C005A403A /* DefaultTileset.tmx in Resources */ = {isa = PBXBuildFile; fileRef = C93BB7F813F9853C005A403A /* DefaultTileset.tmx */; };
 		C93BB7FB13F9853C005A403A /* tilesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = C93BB7F913F9853C005A403A /* tilesheet.png */; };
+		C9C5ABF313FC913000C617FC /* SRDungeon.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5ABF213FC912F00C617FC /* SRDungeon.m */; };
+		C9C5ABF713FC91BC00C617FC /* SRLayerDungeonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5ABF613FC91BC00C617FC /* SRLayerDungeonTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -310,6 +312,10 @@
 		C93BB7EE13F98020005A403A /* SRLayerTileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLayerTileTest.m; sourceTree = "<group>"; };
 		C93BB7F813F9853C005A403A /* DefaultTileset.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = DefaultTileset.tmx; path = Resources/Tiles/DefaultTileset.tmx; sourceTree = "<group>"; };
 		C93BB7F913F9853C005A403A /* tilesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tilesheet.png; path = Resources/Tiles/tilesheet.png; sourceTree = "<group>"; };
+		C9C5ABF113FC912F00C617FC /* SRDungeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDungeon.h; sourceTree = "<group>"; };
+		C9C5ABF213FC912F00C617FC /* SRDungeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDungeon.m; sourceTree = "<group>"; };
+		C9C5ABF513FC91BC00C617FC /* SRLayerDungeonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRLayerDungeonTest.h; sourceTree = "<group>"; };
+		C9C5ABF613FC91BC00C617FC /* SRLayerDungeonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRLayerDungeonTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +376,8 @@
 				C914370313F5E1EC00019EBF /* libs */,
 				C914381013F5E1EE00019EBF /* Supporting Files */,
 				C914382013F5F48900019EBF /* SpaceRoguelike.h */,
+				C9C5ABF113FC912F00C617FC /* SRDungeon.h */,
+				C9C5ABF213FC912F00C617FC /* SRDungeon.m */,
 			);
 			path = SpaceRoguelike;
 			sourceTree = "<group>";
@@ -660,6 +668,8 @@
 				C914381813F5E1EE00019EBF /* SRLayerMainMenu.m */,
 				C93BB7ED13F98020005A403A /* SRLayerTileTest.h */,
 				C93BB7EE13F98020005A403A /* SRLayerTileTest.m */,
+				C9C5ABF513FC91BC00C617FC /* SRLayerDungeonTest.h */,
+				C9C5ABF613FC91BC00C617FC /* SRLayerDungeonTest.m */,
 			);
 			name = Layers;
 			sourceTree = "<group>";
@@ -826,6 +836,8 @@
 				C914381613F5E1EE00019EBF /* AppDelegate.m in Sources */,
 				C914381913F5E1EE00019EBF /* SRLayerMainMenu.m in Sources */,
 				C93BB7EF13F98020005A403A /* SRLayerTileTest.m in Sources */,
+				C9C5ABF313FC913000C617FC /* SRDungeon.m in Sources */,
+				C9C5ABF713FC91BC00C617FC /* SRLayerDungeonTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,5 +10,7 @@
 #import "SRLayerMainMenu.h"
 #import "SRLayerTileTest.h"
 
+// Entities
+#import "SRDungeon.h"
 
-#define SR_WINDOW_SIZE CGRectMake(0, 0, 1024, 768)
+#define SR_WINDOW_SIZE CGSizeMake(1024, 768)

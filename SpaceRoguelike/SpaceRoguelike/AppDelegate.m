@@ -27,9 +27,9 @@
 	
 	// Enable "moving" mouse event. Default no.
 	[window_ setAcceptsMouseMovedEvents:NO];
-	
-    [window_ setFrame:SR_WINDOW_SIZE display:YES];
-	
+    
+    [window_ setContentAspectRatio:NSMakeSize(4,3)];
+    
 	[director runWithScene:[SRLayerMainMenu scene]];
 }
 
