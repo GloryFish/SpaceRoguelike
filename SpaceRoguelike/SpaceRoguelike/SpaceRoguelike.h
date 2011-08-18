@@ -9,3 +9,6 @@
 // Layers
 #import "SRLayerMainMenu.h"
 #import "SRLayerTileTest.h"
+
+
+#define SR_WINDOW_SIZE CGRectMake(0, 0, 1024, 768)
