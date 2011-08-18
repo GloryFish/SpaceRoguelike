@@ -34,8 +34,8 @@
 		[self addChild: label];
         
         
-        CCMenuItemFont* itemTileTest = [CCMenuItemFont itemFromString:@"Tile Test" block:^(id sender){
-            CCScene* scene = [SRLayerTileTest scene];
+        CCMenuItemFont* itemTileTest = [CCMenuItemFont itemFromString:@"Dungeon Test" block:^(id sender){
+            CCScene* scene = [SRLayerDungeonTest scene];
             [[CCDirector sharedDirector] replaceScene:[CCTransitionSlideInL transitionWithDuration:0.5 scene:scene]];
         }];
         itemTileTest.fontName = @"Helvetica";
