@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9DABCF31416A99000D8BF6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DABCF21416A99000D8BF6F /* Foundation.framework */; };
+		C9DABCF61416A99000D8BF6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DABCF51416A99000D8BF6F /* main.cpp */; };
+		C9DABCF81416A99000D8BF6F /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9DABCF71416A99000D8BF6F /* ResourcePath.mm */; };
+		C9DABCFC1416A99100D8BF6F /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9DABCFB1416A99100D8BF6F /* sansation.ttf */; };
+		C9DABCFE1416A99100D8BF6F /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DABCFD1416A99100D8BF6F /* cute_image.jpg */; };
+		C9DABD001416A99100D8BF6F /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = C9DABCFF1416A99100D8BF6F /* nice_music.ogg */; };
+		C9DABD051416A99100D8BF6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DABD031416A99100D8BF6F /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9DABCEE1416A99000D8BF6F /* SpaceRoguelike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRoguelike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DABCF21416A99000D8BF6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9DABCF51416A99000D8BF6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C9DABCF71416A99000D8BF6F /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		C9DABCF91416A99000D8BF6F /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		C9DABCFB1416A99100D8BF6F /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		C9DABCFD1416A99100D8BF6F /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		C9DABCFF1416A99100D8BF6F /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		C9DABD021416A99100D8BF6F /* SpaceRoguelike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRoguelike-Info.plist"; sourceTree = "<group>"; };
+		C9DABD041416A99100D8BF6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9DABCEB1416A99000D8BF6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DABCF31416A99000D8BF6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9DABCE21416A99000D8BF6F = {
+			isa = PBXGroup;
+			children = (
+				C9DABCF41416A99000D8BF6F /* SpaceRoguelike */,
+				C9DABCF11416A99000D8BF6F /* Frameworks */,
+				C9DABCEF1416A99000D8BF6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9DABCEF1416A99000D8BF6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9DABCEE1416A99000D8BF6F /* SpaceRoguelike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9DABCF11416A99000D8BF6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9DABCF21416A99000D8BF6F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9DABCF41416A99000D8BF6F /* SpaceRoguelike */ = {
+			isa = PBXGroup;
+			children = (
+				C9DABCF51416A99000D8BF6F /* main.cpp */,
+				C9DABCF71416A99000D8BF6F /* ResourcePath.mm */,
+				C9DABCF91416A99000D8BF6F /* ResourcePath.hpp */,
+				C9DABCFA1416A99100D8BF6F /* Resources */,
+				C9DABD011416A99100D8BF6F /* Supporting Files */,
+			);
+			path = SpaceRoguelike;
+			sourceTree = "<group>";
+		};
+		C9DABCFA1416A99100D8BF6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9DABCFB1416A99100D8BF6F /* sansation.ttf */,
+				C9DABCFD1416A99100D8BF6F /* cute_image.jpg */,
+				C9DABCFF1416A99100D8BF6F /* nice_music.ogg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C9DABD011416A99100D8BF6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9DABD021416A99100D8BF6F /* SpaceRoguelike-Info.plist */,
+				C9DABD031416A99100D8BF6F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9DABCED1416A99000D8BF6F /* SpaceRoguelike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DABD081416A99100D8BF6F /* Build configuration list for PBXNativeTarget "SpaceRoguelike" */;
+			buildPhases = (
+				C9DABCE91416A99000D8BF6F /* ShellScript */,
+				C9DABCEA1416A99000D8BF6F /* Sources */,
+				C9DABCEB1416A99000D8BF6F /* Frameworks */,
+				C9DABCEC1416A99000D8BF6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceRoguelike;
+			productName = SpaceRoguelike;
+			productReference = C9DABCEE1416A99000D8BF6F /* SpaceRoguelike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9DABCE41416A99000D8BF6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = GloryFish.org;
+			};
+			buildConfigurationList = C9DABCE71416A99000D8BF6F /* Build configuration list for PBXProject "SpaceRoguelike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9DABCE21416A99000D8BF6F;
+			productRefGroup = C9DABCEF1416A99000D8BF6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9DABCED1416A99000D8BF6F /* SpaceRoguelike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9DABCEC1416A99000D8BF6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DABCFC1416A99100D8BF6F /* sansation.ttf in Resources */,
+				C9DABCFE1416A99100D8BF6F /* cute_image.jpg in Resources */,
+				C9DABD001416A99100D8BF6F /* nice_music.ogg in Resources */,
+				C9DABD051416A99100D8BF6F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9DABCE91416A99000D8BF6F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required sfml dylibs into the application bundle frameworks folder\n# NB : this script assumes that if moduleX is required in release mode then it is also required in debug mode.\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    if [ -z $1 ]\n    then\n        echo \"no parameter! ERROR!\"\n        exit\n    else\n        if [ $CONFIGURATION = \"Debug\" ]\n        then\n            rm -f $BUILT_PRODUCTS_DIR/test.app/Contents/Frameworks/libsfml-$1.2.dylib\n            ditto /usr/local/lib/libsfml-$1-d.2.dylib $BUILT_PRODUCTS_DIR/test.app/Contents/Frameworks/libsfml-$1-d.2.dylib\n        else\n            rm -f $BUILT_PRODUCTS_DIR/test.app/Contents/Frameworks/libsfml-$1-d.2.dylib\n            ditto /usr/local/lib/libsfml-$1.2.dylib $BUILT_PRODUCTS_DIR/test.app/Contents/Frameworks/libsfml-$1.2.dylib\n        fi\n    fi\n}\n\nif [ -n \"$SYSTEM_RELEASE\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$AUDIO_RELEASE\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$NETWORK_RELEASE\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$WINDOW_RELEASE\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$GRAPHICS_RELEASE\" ]\nthen\n    require \"graphics\"\nfi\n\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9DABCEA1416A99000D8BF6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DABCF61416A99000D8BF6F /* main.cpp in Sources */,
+				C9DABCF81416A99000D8BF6F /* ResourcePath.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9DABD031416A99100D8BF6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9DABD041416A99100D8BF6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9DABD061416A99100D8BF6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				AUDIO_DEBUG = "-lsfml-audio-d";
+				AUDIO_RELEASE = "-lsfml-audio";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GRAPHICS_DEBUG = "-lsfml-graphics-d";
+				GRAPHICS_RELEASE = "-lsfml-graphics";
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS)",
+					/usr/local/include/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				NETWORK_DEBUG = "";
+				NETWORK_RELEASE = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"$(SYSTEM_DEBUG)",
+					"$(WINDOW_DEBUG)",
+					"$(GRAPHICS_DEBUG)",
+					"$(AUDIO_DEBUG)",
+					"$(NETWORK_DEBUG)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SYSTEM_DEBUG = "-lsfml-system-d";
+				SYSTEM_RELEASE = "-lsfml-system";
+				WINDOW_DEBUG = "-lsfml-window-d";
+				WINDOW_RELEASE = "-lsfml-window";
+			};
+			name = Debug;
+		};
+		C9DABD071416A99100D8BF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				AUDIO_DEBUG = "-lsfml-audio-d";
+				AUDIO_RELEASE = "-lsfml-audio";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GRAPHICS_DEBUG = "-lsfml-graphics-d";
+				GRAPHICS_RELEASE = "-lsfml-graphics";
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS)",
+					/usr/local/include/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				NETWORK_DEBUG = "";
+				NETWORK_RELEASE = "";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"$(SYSTEM_RELEASE)",
+					"$(WINDOW_RELEASE)",
+					"$(GRAPHICS_RELEASE)",
+					"$(AUDIO_RELEASE)",
+					"$(NETWORK_RELEASE)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SYSTEM_DEBUG = "-lsfml-system-d";
+				SYSTEM_RELEASE = "-lsfml-system";
+				WINDOW_DEBUG = "-lsfml-window-d";
+				WINDOW_RELEASE = "-lsfml-window";
+			};
+			name = Release;
+		};
+		C9DABD091416A99100D8BF6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "SpaceRoguelike/SpaceRoguelike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9DABD0A1416A99100D8BF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "SpaceRoguelike/SpaceRoguelike-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9DABCE71416A99000D8BF6F /* Build configuration list for PBXProject "SpaceRoguelike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DABD061416A99100D8BF6F /* Debug */,
+				C9DABD071416A99100D8BF6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9DABD081416A99100D8BF6F /* Build configuration list for PBXNativeTarget "SpaceRoguelike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9DABD091416A99100D8BF6F /* Debug */,
+				C9DABD0A1416A99100D8BF6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9DABCE41416A99000D8BF6F /* Project object */;
+}
