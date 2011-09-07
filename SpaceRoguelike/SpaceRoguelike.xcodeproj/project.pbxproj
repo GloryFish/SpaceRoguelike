@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93CB25214170034005CB7F7 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = C93CB25114170034005CB7F7 /* man.png */; };
 		C9DABCF31416A99000D8BF6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DABCF21416A99000D8BF6F /* Foundation.framework */; };
 		C9DABCF61416A99000D8BF6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9DABCF51416A99000D8BF6F /* main.cpp */; };
 		C9DABCF81416A99000D8BF6F /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9DABCF71416A99000D8BF6F /* ResourcePath.mm */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C93CB25114170034005CB7F7 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = man.png; path = resources/images/man.png; sourceTree = "<group>"; };
 		C9DABCEE1416A99000D8BF6F /* SpaceRoguelike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRoguelike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DABCF21416A99000D8BF6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9DABCF51416A99000D8BF6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C93CB24F14170020005CB7F7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C93CB25114170034005CB7F7 /* man.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		C9DABCE21416A99000D8BF6F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		C9DABCFA1416A99100D8BF6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C93CB24F14170020005CB7F7 /* Images */,
 				C9DABCFB1416A99100D8BF6F /* sansation.ttf */,
 				C9DABCFD1416A99100D8BF6F /* cute_image.jpg */,
 				C9DABCFF1416A99100D8BF6F /* nice_music.ogg */,
@@ -152,6 +163,7 @@
 				C9DABCFE1416A99100D8BF6F /* cute_image.jpg in Resources */,
 				C9DABD001416A99100D8BF6F /* nice_music.ogg in Resources */,
 				C9DABD051416A99100D8BF6F /* InfoPlist.strings in Resources */,
+				C93CB25214170034005CB7F7 /* man.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +344,7 @@
 				C9DABD0A1416A99100D8BF6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
