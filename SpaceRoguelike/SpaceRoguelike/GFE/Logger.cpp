@@ -7,9 +7,9 @@
 //
 
 #include <iostream>
-#include "Logger.h"
+#include "Logger.hpp"
 
-namespace SpaceRoguelike {
+namespace GFE {
     
     std::ostringstream Logger::logstream;
     

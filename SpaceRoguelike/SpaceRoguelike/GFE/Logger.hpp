@@ -11,7 +11,7 @@
 
 #include <sstream>
 
-namespace SpaceRoguelike {
+namespace GFE {
     class Logger {
         public:
             Logger() {}
