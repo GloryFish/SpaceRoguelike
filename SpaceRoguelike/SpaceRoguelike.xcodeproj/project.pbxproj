@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		C93CB25114170034005CB7F7 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = man.png; path = resources/images/man.png; sourceTree = "<group>"; };
 		C96BBF1D14184AA600CDDBF2 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
-		C96BBF1F14184AB000CDDBF2 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		C96BBF1F14184AB000CDDBF2 /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; path = Logger.hpp; sourceTree = "<group>"; };
 		C9DABCEE1416A99000D8BF6F /* SpaceRoguelike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRoguelike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9DABCF21416A99000D8BF6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9DABCF51416A99000D8BF6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 				C9DABCF91416A99000D8BF6F /* ResourcePath.hpp */,
 				C9DABCFA1416A99100D8BF6F /* resources */,
 				C9DABD011416A99100D8BF6F /* Supporting Files */,
-				C96BBF1F14184AB000CDDBF2 /* Logger.h */,
+				C96BBF1F14184AB000CDDBF2 /* Logger.hpp */,
 				C96BBF1D14184AA600CDDBF2 /* Logger.cpp */,
 			);
 			path = SpaceRoguelike;
