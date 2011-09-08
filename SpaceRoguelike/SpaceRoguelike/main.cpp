@@ -1,10 +1,15 @@
+#include <sstream>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include "ResourcePath.hpp"
+#include "Logger.h"
 
 int main (int argc, const char * argv[])
 {
     
+    SpaceRoguelike::Logger logger; 
+    logger.log() << "BEGIN";
+
     unsigned speed = 200;
     
     // Create the main window
@@ -72,6 +77,9 @@ int main (int argc, const char * argv[])
                 sprite.SetPosition(pos.x, pos.y);
             }
 
+            sf::Vector2f pos = sprite.GetPosition();
+            
+            logger.log() << "X: " << pos.x << " Y: " << pos.y;
     	}
 
     	// Clear screen
