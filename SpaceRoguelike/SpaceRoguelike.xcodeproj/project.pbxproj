@@ -16,6 +16,7 @@
 		C9DABCFE1416A99100D8BF6F /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DABCFD1416A99100D8BF6F /* cute_image.jpg */; };
 		C9DABD001416A99100D8BF6F /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = C9DABCFF1416A99100D8BF6F /* nice_music.ogg */; };
 		C9DABD051416A99100D8BF6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DABD031416A99100D8BF6F /* InfoPlist.strings */; };
+		C9ED1E141419A35300AC528C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9ED1E121419A35300AC528C /* Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		C9DABCFF1416A99100D8BF6F /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
 		C9DABD021416A99100D8BF6F /* SpaceRoguelike-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceRoguelike-Info.plist"; sourceTree = "<group>"; };
 		C9DABD041416A99100D8BF6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9ED1E121419A35300AC528C /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Game.cpp; path = GFE/Game.cpp; sourceTree = "<group>"; };
+		C9ED1E131419A35300AC528C /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Game.hpp; path = GFE/Game.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				C96BBF2514185F3D00CDDBF2 /* Core.hpp */,
+				C9ED1E121419A35300AC528C /* Game.cpp */,
+				C9ED1E131419A35300AC528C /* Game.hpp */,
 				C96BBF2614185F3D00CDDBF2 /* Logger.cpp */,
 				C96BBF2714185F3D00CDDBF2 /* Logger.hpp */,
 			);
@@ -208,6 +213,7 @@
 				C9DABCF61416A99000D8BF6F /* main.cpp in Sources */,
 				C9DABCF81416A99000D8BF6F /* ResourcePath.mm in Sources */,
 				C96BBF2814185F3D00CDDBF2 /* Logger.cpp in Sources */,
+				C9ED1E141419A35300AC528C /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,8 +5,11 @@
 
 int main (int argc, const char * argv[])
 {
-    GFE::Logger::log() << "BEGIN";
+    GFE::Game game;
     
+    int returnCode = game.Run();
     
-	return EXIT_SUCCESS;
+    GFE::Logger::flush();
+
+	return returnCode;
 }

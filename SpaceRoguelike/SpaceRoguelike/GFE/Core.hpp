@@ -10,6 +10,7 @@
 #define SpaceRoguelike_Core_hpp
 
 #include "Logger.hpp"
+#include "Game.hpp"
 
 
 #endif

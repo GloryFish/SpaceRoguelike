@@ -14,12 +14,11 @@
 namespace GFE {
     class Logger {
         public:
-            Logger() {}
             static std::ostringstream& log();
+            static void flush();
         
         private:
             static std::ostringstream logstream;
-            static void flush();
     };
 }
 
