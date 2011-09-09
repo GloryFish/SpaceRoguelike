@@ -58,6 +58,7 @@ namespace GFE {
 
         // Use Vertical Sync
         window.EnableVerticalSync(true);
+        
     }
 
     void Game::Init(void) {
@@ -99,10 +100,20 @@ namespace GFE {
                             // Allow state to handle events
                             break;
                     }
+                    
                 }
-                
+
+                // Update current state
+
                 next_update += update_rate;
             }
+            
+            // Draw current state
+            window.Clear(sf::Color(44, 44, 44));
+
+            window.Display();
+            
+            // Cleanup state
         }
         
     }
