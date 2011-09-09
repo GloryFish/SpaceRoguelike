@@ -13,14 +13,14 @@ namespace GFE {
     
     std::ostringstream Logger::logstream;
     
-    std::ostringstream& Logger::log() {
+    std::ostringstream& Logger::Log() {
         if(logstream.str() != "") {
-            flush();   
+            Flush();   
         }
         return logstream;
     }
     
-    void Logger::flush() {
+    void Logger::Flush() {
         if (logstream.str() != "") {
             std::cout << logstream.str() << std::endl;
             logstream.str("");

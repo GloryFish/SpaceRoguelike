@@ -14,8 +14,8 @@
 namespace GFE {
     class Logger {
         public:
-            static std::ostringstream& log();
-            static void flush();
+            static std::ostringstream& Log();
+            static void Flush();
         
         private:
             static std::ostringstream logstream;

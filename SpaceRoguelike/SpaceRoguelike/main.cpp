@@ -9,7 +9,7 @@ int main (int argc, const char * argv[])
     
     int returnCode = game.Run();
     
-    GFE::Logger::flush();
+    GFE::Logger::Flush();
 
 	return returnCode;
 }

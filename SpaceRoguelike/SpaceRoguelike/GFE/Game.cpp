@@ -18,7 +18,7 @@ namespace GFE {
     
     int Game::Run(void) {
         running = true;
-        Logger::log() << "Running...";
+        Logger::Log() << "Running...";
         
         PreInit();
         
@@ -42,7 +42,7 @@ namespace GFE {
     }
     
     void Game::PreInit(void) {
-        Logger::log() << "PreInit()";
+        Logger::Log() << "PreInit()";
         
         video_mode.Width = DEFAULT_VIDEO_WIDTH;
         video_mode.Height = DEFAULT_VIDEO_HEIGHT;
@@ -56,12 +56,12 @@ namespace GFE {
     }
 
     void Game::Init(void) {
-        Logger::log() << "Init()";
+        Logger::Log() << "Init()";
         
     }
 
     void Game::Loop(void) {
-        Logger::log() << "Loop()";
+        Logger::Log() << "Loop()";
         
         // Clock used in restricting Update loop to a fixed rate
         sf::Clock update_clock;
@@ -83,14 +83,14 @@ namespace GFE {
                 
                 next_update += update_rate;
                 
-                Logger::log() << "Time: " << update_clock.GetElapsedTime();
+                Logger::Log() << "Time: " << update_clock.GetElapsedTime();
             }
         }
         
     }
 
     void Game::Cleanup(void) {
-        Logger::log() << "Cleanup()";
+        Logger::Log() << "Cleanup()";
         
     }
 
