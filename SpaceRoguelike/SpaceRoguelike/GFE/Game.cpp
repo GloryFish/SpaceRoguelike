@@ -41,6 +41,11 @@ namespace GFE {
         return running;
     }
     
+    void Game::Quit(int status_code) {
+        exit_code = status_code;
+        running = false;
+    }
+    
     void Game::PreInit(void) {
         Logger::Log() << "PreInit()";
         
@@ -78,12 +83,25 @@ namespace GFE {
                 sf::Event event;
 
                 while(window.PollEvent(event)) {
-                    
+                    switch (event.Type) {
+                        case sf::Event::Closed: // Window closed
+                            Quit(EXIT_SUCCESS);
+                            break;
+                        case sf::Event::GainedFocus:  // Window gained focus
+                            // resume state
+                            break;
+                        case sf::Event::LostFocus:    // Window lost focus
+                            // Pause state
+                            break;
+                        case sf::Event::Resized:      // Window resized
+                            break;
+                        default:
+                            // Allow state to handle events
+                            break;
+                    }
                 }
                 
                 next_update += update_rate;
-                
-                Logger::Log() << "Time: " << update_clock.GetElapsedTime();
             }
         }
         

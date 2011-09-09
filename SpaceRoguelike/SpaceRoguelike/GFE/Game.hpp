@@ -25,12 +25,14 @@ namespace GFE {
         sf::RenderWindow window;
         sf::VideoMode video_mode;
         sf::ContextSettings context_settings;
+        int exit_code;
         
         Game();
 
         // Methods
         int Run(void);
         bool IsRunning(void);
+        void Quit(int status_code = EXIT_SUCCESS);
         
     private:
         // Fields
