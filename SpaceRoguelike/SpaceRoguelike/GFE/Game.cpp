@@ -13,6 +13,7 @@ namespace GFE {
     
     Game::Game() {
         running = false;
+        update_rate = (Uint32)(1000.0f / 100.0f);
     }
     
     int Game::Run(void) {
@@ -36,9 +37,22 @@ namespace GFE {
         return EXIT_SUCCESS;
     }
     
+    bool Game::IsRunning(void) {
+        return running;
+    }
+    
     void Game::PreInit(void) {
         Logger::log() << "PreInit()";
         
+        video_mode.Width = DEFAULT_VIDEO_WIDTH;
+        video_mode.Height = DEFAULT_VIDEO_HEIGHT;
+        video_mode.BitsPerPixel = DEFAULT_VIDEO_BPP;
+
+        // Create a RenderWindow object using VideoMode object above
+        window.Create(video_mode, "Space Roguelike", sf::Style::Default, context_settings);
+
+        // Use Vertical Sync
+        window.EnableVerticalSync(true);
     }
 
     void Game::Init(void) {
@@ -48,6 +62,30 @@ namespace GFE {
 
     void Game::Loop(void) {
         Logger::log() << "Loop()";
+        
+        // Clock used in restricting Update loop to a fixed rate
+        sf::Clock update_clock;
+        update_clock.Reset();
+        
+        // Update immediately
+        Uint32 next_update = update_clock.GetElapsedTime();
+        
+        // Loop while IsRunning returns true
+        while(IsRunning() && window.IsOpened()) {
+            
+            while (update_clock.GetElapsedTime() > next_update) {
+             
+                sf::Event event;
+
+                while(window.PollEvent(event)) {
+                    
+                }
+                
+                next_update += update_rate;
+                
+                Logger::log() << "Time: " << update_clock.GetElapsedTime();
+            }
+        }
         
     }
 

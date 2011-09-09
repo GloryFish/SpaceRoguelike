@@ -9,17 +9,34 @@
 #ifndef SpaceRoguelike_Game_hpp
 #define SpaceRoguelike_Game_hpp
 
+#include <SFML/Graphics.hpp>
+
 namespace GFE {
     
     class Game {
 
     public:
-        bool running;
+        // Constants
+        static const unsigned int DEFAULT_VIDEO_WIDTH = 800;
+        static const unsigned int DEFAULT_VIDEO_HEIGHT = 600;
+        static const unsigned int DEFAULT_VIDEO_BPP = 32;
+        
+        // Fields
+        sf::RenderWindow window;
+        sf::VideoMode video_mode;
+        sf::ContextSettings context_settings;
         
         Game();
+
+        // Methods
         int Run(void);
-    
+        bool IsRunning(void);
+        
     private:
+        // Fields
+        bool running;
+        Uint32 update_rate;
+        
         void PreInit(void);
         void Init(void);
         void Loop(void);
