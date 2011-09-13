@@ -9,7 +9,13 @@
 #ifndef SpaceRoguelike_Game_hpp
 #define SpaceRoguelike_Game_hpp
 
+#include "StateManager.hpp"
+#include "StateManager.hpp"
+#include "CoreTypes.hpp"
+
 #include <SFML/Graphics.hpp>
+
+
 
 namespace GFE {
     
@@ -26,23 +32,26 @@ namespace GFE {
         sf::VideoMode video_mode;
         sf::ContextSettings context_settings;
         int exit_code;
+        std::string title;
         
-        Game();
+        StateManager stateManager;
+        
+        Game(const std::string theTitle = "GFE Game");
 
         // Methods
         int Run(void);
         bool IsRunning(void);
         void Quit(int status_code = EXIT_SUCCESS);
+    protected:
+        virtual void PreInit(void);
+        virtual void Init(void);
+        virtual void Loop(void);
+        virtual void Cleanup(void);
         
     private:
         // Fields
         bool running;
         Uint32 update_rate;
-        
-        void PreInit(void);
-        void Init(void);
-        void Loop(void);
-        void Cleanup(void);
     };
     
 }

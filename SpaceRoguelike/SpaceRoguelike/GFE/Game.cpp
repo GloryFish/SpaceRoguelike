@@ -6,19 +6,24 @@
 //  Copyright 2011 GloryFish.org. All rights reserved.
 //
 
+#include "Game.hpp"
+#include "Logger.hpp"
+#include "GreenState.hpp"
 #include <iostream>
-#include "Core.hpp"
 
 namespace GFE {
     
-    Game::Game() {
+    Game::Game(const std::string theTitle) {
         running = false;
         update_rate = (Uint32)(1000.0f / 100.0f);
+        title = theTitle;
     }
     
     int Game::Run(void) {
         running = true;
         Logger::Log() << "Running...";
+        
+        stateManager.RegisterGame(this);
         
         PreInit();
         
@@ -54,7 +59,7 @@ namespace GFE {
         video_mode.BitsPerPixel = DEFAULT_VIDEO_BPP;
 
         // Create a RenderWindow object using VideoMode object above
-        window.Create(video_mode, "Space Roguelike", sf::Style::Default, context_settings);
+        window.Create(video_mode, title, sf::Style::Default, context_settings);
 
         // Use Vertical Sync
         window.EnableVerticalSync(true);
@@ -79,6 +84,11 @@ namespace GFE {
         // Loop while IsRunning returns true
         while(IsRunning() && window.IsOpened()) {
             
+            IState* currentState = stateManager.GetActiveState();
+            
+            // Check for corrupt state returned by our StateManager
+            assert(NULL != currentState && "Game::Loop() received a bad pointer");
+            
             while (update_clock.GetElapsedTime() > next_update) {
              
                 sf::Event event;
@@ -90,26 +100,30 @@ namespace GFE {
                             break;
                         case sf::Event::GainedFocus:  // Window gained focus
                             // resume state
+                            currentState->Resume();
                             break;
                         case sf::Event::LostFocus:    // Window lost focus
                             // Pause state
+                            currentState->Pause();
                             break;
                         case sf::Event::Resized:      // Window resized
                             break;
                         default:
                             // Allow state to handle events
+                            currentState->HandleEvents(event);
                             break;
                     }
                     
                 }
 
                 // Update current state
+                currentState->UpdateFixed();
 
                 next_update += update_rate;
             }
             
             // Draw current state
-            window.Clear(sf::Color(44, 44, 44));
+            currentState->Draw();
 
             window.Display();
             

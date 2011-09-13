@@ -2,10 +2,11 @@
 #include <SFML/Audio.hpp>
 #include "ResourcePath.hpp"
 #include "GFE/Core.hpp"
+#include "SpaceRoguelikeGame.hpp"
 
 int main (int argc, const char * argv[])
 {
-    GFE::Game game;
+    SpaceRoguelike::SpaceRoguelikeGame game;
     
     int returnCode = game.Run();
     

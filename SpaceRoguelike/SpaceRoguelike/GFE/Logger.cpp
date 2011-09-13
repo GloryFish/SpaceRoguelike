@@ -6,8 +6,8 @@
 //  Copyright 2011 GloryFish.org. All rights reserved.
 //
 
-#include <iostream>
 #include "Logger.hpp"
+#include <iostream>
 
 namespace GFE {
     
