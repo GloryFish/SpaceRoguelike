@@ -65,10 +65,10 @@ namespace GFE {
     class Game;
     class StateManager;
     
-    // Forward declare GQE loggers provided
+    // Forward declare loggers provided
     class Logger;
     
-    // Forward declare GQE states provided
+    // Forward declare states provided
     class GreenState;
 }
 

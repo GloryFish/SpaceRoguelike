@@ -13,7 +13,7 @@ namespace GFE
   public:
     /**
      * GreenState constructor
-     * @param[in] theApp is a pointer to the App class.
+     * @param[in] theGame is a pointer to the App class.
      */
     GreenState(Game* theGame);
 
@@ -71,6 +71,6 @@ namespace GFE
     // Variables
     /////////////////////////////////////////////////////////////////////////
   }; // class GreenState
-} // namespace GQE
+}
 
 #endif // CORE_SPLASH_STATE_HPP_INCLUDED

@@ -24,7 +24,7 @@ namespace GFE {
         
         /**
          * GetID will return the ID used to identify this State object
-         * @return GQE::typeStateID is the ID for this State object
+         * @return GFE::stateID is the ID for this State object
          */
         const GFE::stateID GetID(void) const
         {
@@ -33,7 +33,7 @@ namespace GFE {
         
         /**
          * DoInit is responsible for initializing this State.  HandleCleanup will
-         * be called if mCleanup is true so Derived classes should always call
+         * be called if cleanup is true so Derived classes should always call
          * IState::DoInit() first before initializing their assets.
          */
         virtual void DoInit(void)
@@ -51,13 +51,13 @@ namespace GFE {
          * DeInit is responsible for marking this state to be cleaned up
          */
         void DeInit(void) {
-            if(true == mInit) {
-                mCleanup = true;
-                mInit = false;
-                mElapsedTime += (float)mElapsedClock.GetElapsedTime() / 1000.0f;
+            if(true == init) {
+                cleanup = true;
+                init = false;
+                elapsedTime += (float)elapsedClock.GetElapsedTime() / 1000.0f;
 
-                if(true == mPaused) {
-                    mPausedTime += (float)mPausedClock.GetElapsedTime() / 1000.0f;
+                if(true == paused) {
+                    pausedTime += (float)pausedClock.GetElapsedTime() / 1000.0f;
                 }
             }
         }
@@ -70,7 +70,7 @@ namespace GFE {
          */
         bool IsInitComplete(void)
         {
-            return mInit;
+            return init;
         }
         
         /**
@@ -80,7 +80,7 @@ namespace GFE {
          */
         bool IsPaused(void)
         {
-            return mPaused;
+            return paused;
         }
         
         /**
@@ -89,10 +89,10 @@ namespace GFE {
          */
         virtual void Pause(void)
         {
-            if(false == mPaused)
+            if(false == paused)
             {
-                mPaused = true;
-                mPausedClock.Reset();
+                paused = true;
+                pausedClock.Reset();
             }
         }
         
@@ -102,10 +102,10 @@ namespace GFE {
          */
         virtual void Resume(void)
         {
-            if(true == mPaused)
+            if(true == paused)
             {
-                mPaused = false;
-                mPausedTime += (float)mPausedClock.GetElapsedTime() / 1000.0f;
+                paused = false;
+                pausedTime += (float)pausedClock.GetElapsedTime() / 1000.0f;
             }
         }
         
@@ -141,13 +141,13 @@ namespace GFE {
          */
         void HandleCleanup(void)
         {
-            if(true == mCleanup)
+            if(true == cleanup)
             {
                 // Call cleanup
                 Cleanup();
                 
                 // Clear our cleanup flag
-                mCleanup = false;
+                cleanup = false;
             }
         }
         
@@ -160,11 +160,11 @@ namespace GFE {
          */
         float GetElapsedTime(void) const
         {
-            float result = (float)mElapsedClock.GetElapsedTime() / 1000.0f;
+            float result = (float)elapsedClock.GetElapsedTime() / 1000.0f;
             
-            if(false == mInit)
+            if(false == init)
             {
-                result = mElapsedTime;
+                result = elapsedTime;
             }
             
             return result;
@@ -172,28 +172,28 @@ namespace GFE {
         
     protected:
         /// Pointer to the App class
-        Game*                  mApp;
+        Game*                  game;
         
         /**
          * IState constructor is private because we do not allow copies of our
          * Singleton class
          * @param[in] theID to use for this State object
-         * @param[in] theApp is a pointer to the App derived class
+         * @param[in] theGame is a pointer to the App derived class
          */
-        IState(const stateID theID, Game* theApp) :
-        mApp(theApp),
+        IState(const stateID theID, Game* theGame) :
+        game(theGame),
         stateID(theID),
-        mInit(false),
-        mPaused(false),
-        mCleanup(false),
-        mElapsedTime(0.0f),
-        mPausedTime(0.0f)
+        init(false),
+        paused(false),
+        cleanup(false),
+        elapsedTime(0.0f),
+        pausedTime(0.0f)
         {
             // Check that our pointer is good
-            assert(NULL != theApp && "IState::IState() theApp pointer is bad");
+            assert(NULL != theGame && "IState::IState() theGame pointer is bad");
             
             // Keep a copy of our Application pointer
-            mApp = theApp; 
+            game = theGame; 
         }
         
         /**
@@ -208,19 +208,19 @@ namespace GFE {
         /// The State ID
         const stateID     stateID;
         /// Boolean that indicates that DoInit has been called
-        bool                  mInit;
+        bool                  init;
         /// State is currently paused (not active)
-        bool                  mPaused;
+        bool                  paused;
         /// State needs to be cleaned up at the end of the next game loop
-        bool                  mCleanup;
+        bool                  cleanup;
         /// Clock will help us keep track of running and paused elapsed time
-        sf::Clock             mElapsedClock;
+        sf::Clock             elapsedClock;
         /// Total elapsed time since DoInit was called
-        float                 mElapsedTime;
+        float                 elapsedTime;
         /// Clock will help us keep track of time paused
-        sf::Clock             mPausedClock;
+        sf::Clock             pausedClock;
         /// Total elapsed time paused since DoInit was called
-        float                 mPausedTime;
+        float                 pausedTime;
         
         /**
          * Our copy constructor is private because we do not allow copies of

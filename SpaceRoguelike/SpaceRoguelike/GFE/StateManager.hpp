@@ -25,9 +25,9 @@ namespace GFE
     /**
      * RegisterApp will register a pointer to the App class so it can be used
      * by the StateManager for error handling and log reporting.
-     * @param[in] theApp is a pointer to the App (or App derived) class
+     * @param[in] theGame is a pointer to the App (or App derived) class
      */
-    void RegisterGame(Game* theApp);
+    void RegisterGame(Game* theGame);
 
     /**
      * IsEmpty will return true if there are no active states on the stack.
@@ -106,11 +106,11 @@ namespace GFE
     // Variables
     ///////////////////////////////////////////////////////////////////////////
     /// Pointer to the App class for error handling and logging
-    Game*                  mApp;
+    Game*                  game;
     /// Stack to store the current and previously active states
-    std::vector<IState*>  mStack;
+    std::vector<IState*>  stack;
     /// Stack to store the dead states until they properly cleaned up
-    std::vector<IState*>  mDead;
+    std::vector<IState*>  dead;
 
     /**
      * StateManager copy constructor is private because we do not allow copies
@@ -125,39 +125,7 @@ namespace GFE
     StateManager& operator=(const StateManager&); // Intentionally undefined
 
   }; // class StateManager
-} // namespace GQE
+}
 
 #endif // CORE_STATE_MANAGER_HPP_INCLUDED
 
-/**
- * @class GQE::StateManager
- * @ingroup Core
- * The StateManager class is used by the App class to manage all game
- * states. A game state represents a distinct part of the game flow and
- * often includes the following: game transitions, splash screens,
- * menu screens (not to be confused with dialog windows), loading files
- * screens, high score screens, etc.  You can also think of the game
- * state as a realization of an entire game or level if desired. The
- * StateManager is responsible for switching between game states and
- * facilitating game state management (adding, deleting, inactivating,
- * pausing, resuming, etc).
- *
- * Copyright (c) 2010-2011 Ryan Lindeman
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
